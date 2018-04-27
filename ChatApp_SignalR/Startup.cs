@@ -8,7 +8,9 @@ namespace ChatApp_SignalR
     {
         public void Configuration(IAppBuilder app)
         {
+
             ConfigureAuth(app);
+            app.MapSignalR();
         }
     }
 }
